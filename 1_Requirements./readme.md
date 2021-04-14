@@ -12,7 +12,7 @@ REQUIREMENTS
   * It is real stress buster that does not take more time and it can be finish within a matter of time.
 ## BASIC PLAN
   * The Simple Gantt chart is attached below
-![Gnatt chart]()
+![Gnatt chart](https://github.com/topnotch07/Ltts_mini_project/blob/8e70129331c979a9fc17acae9825f0b2608d926b/1_Requirements./GANTT%20CHART.jpg)
   * This project takes 1 week approximate time to complete as per above figure. 
   * Doing some reseach on what to do and how to do. Later figure out 512 game. 
   * In this project we implemented waterflow model
