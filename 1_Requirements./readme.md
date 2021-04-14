@@ -16,7 +16,7 @@ REQUIREMENTS
   * This project takes 1 week approximate time to complete as per above figure. 
   * Doing some reseach on what to do and how to do. Later figure out 512 game. 
   * In this project we implemented waterflow model
-![SDLC model]()
+![SDLC model](https://github.com/topnotch07/Ltts_mini_project/blob/e17cb8959a130a40f04e0e6ccbdb77cd843f76e1/1_Requirements./model.jpg)
   * On later developement of code and resplective functions and structures were used.
 ## INTERFACE 
   * We use CodeBlocks is a free C/C++ and Fortran IDE built to meet the most demanding needs of its users. It is designed to be very extensible and fully configurable. 
