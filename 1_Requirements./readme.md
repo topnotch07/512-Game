@@ -21,7 +21,7 @@ REQUIREMENTS
 ## INTERFACE 
   * We use CodeBlocks is a free C/C++ and Fortran IDE built to meet the most demanding needs of its users. It is designed to be very extensible and fully configurable. 
   * Built around a plugin framework, Code::Blocks can be extended with plugins. Any kind of functionality can be added by installing/coding a plugin. For instance, event compiling and debugging functionality is provided by plugins!
-![CodeBlocks enviornment]()
+![CodeBlocks enviornment](https://github.com/topnotch07/Ltts_mini_project/blob/fc44439d9341945652b110e38e8ba5721e181d0b/1_Requirements./codeblocks.jpg)
 ## REFRENCES
   * Statt, Nick (22 March 2014). https://www.cnet.com/news/2048-starts-easy-gets-hard-heres-how-to-make-it-easy-again/. CNet. Retrieved 25 January 2021.
   * Rodriguez, Salvador (24 March 2014). https://www.latimes.com/business/technology/la-fi-tn-2048-latest-gaming-craze-20140324-story.html Los Angeles Times.
