@@ -14,5 +14,3 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: make all
-      run:  make all -C Ltts_mini_project/3_Implementation/
