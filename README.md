@@ -16,4 +16,7 @@ Folder             | Description
 ## Feature
   * The game is small and does not take up much space and time.
   * It’s a single player game which means you can constantly challenge yourself to a better score.
-  
+## REFRENCES
+  * Statt, Nick (22 March 2014). https://www.cnet.com/news/2048-starts-easy-gets-hard-heres-how-to-make-it-easy-again/. CNet. Retrieved 25 January 2021.
+  * Rodriguez, Salvador (24 March 2014). https://www.latimes.com/business/technology/la-fi-tn-2048-latest-gaming-craze-20140324-story.html Los Angeles Times.
+
