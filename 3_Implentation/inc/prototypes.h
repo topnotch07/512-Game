@@ -14,7 +14,6 @@
 #include<time.h>
 #include<ctype.h>
 #include <time.h>
-#include <process.h>
 
 /** @brief declare macros For KEYSTROKES
  * UP,DOWN, LEFT,RIGHT, SIZE, BORDER, ESC, PR
