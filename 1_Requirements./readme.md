@@ -18,6 +18,8 @@ REQUIREMENTS
   * In this project we implemented waterflow model
 ![SDLC model](https://github.com/topnotch07/Ltts_mini_project/blob/e17cb8959a130a40f04e0e6ccbdb77cd843f76e1/1_Requirements./model.jpg)
   * On later developement of code and resplective functions and structures were used.
+## Swot Analysis
+![swot](https://github.com/topnotch07/Ltts_mini_project/blob/ca547d1f5fec49dbaed5703609195e592f281776/1_Requirements./swot.jpg)
 ## INTERFACE 
   * We use CodeBlocks is a free C/C++ and Fortran IDE built to meet the most demanding needs of its users. It is designed to be very extensible and fully configurable. 
   * Built around a plugin framework, Code::Blocks can be extended with plugins. Any kind of functionality can be added by installing/coding a plugin. For instance, event compiling and debugging functionality is provided by plugins!
