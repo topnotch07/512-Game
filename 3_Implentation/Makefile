@@ -1,12 +1,17 @@
 PROJ_NAME = game
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
+BUILD = build
+
+
 SRC =src/display.c \
 src/movements.c \
 src/wait.c \
 src/startend.c 
 
 COV_SRC = test.c
+
+INCLUDE_LIBS = -lcunit
 
 TEST_SRC = src/display.c \
 src/movements.c \
@@ -37,7 +42,7 @@ doc:
 	make -C ./documentation
 
 test:
-	sudo gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT)
+	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT)
 
 
 analyze: test memcheck staticcheck coverage sanitize_check
@@ -49,7 +54,7 @@ cppcheck:
 	cppcheck --enable=all $(SRC) 512.c
 	
 sanitize_check:
-	sudo gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
 	./$(TEST_OUTPUT)
 	
 debug:
@@ -60,7 +65,7 @@ valgrind:
 	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
 	
 coverage:$(TEST_SRC)
-	sudo gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	 gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
 	./$(TEST_OUTPUT)
 	gcov -a 512.c
 
