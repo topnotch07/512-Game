@@ -32,7 +32,6 @@ DOCUMENTATION_OUTPUT = documentation/html
 
 $(PROJECT_NAME):all
 
-
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
