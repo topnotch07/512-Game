@@ -17,7 +17,7 @@ unity/unity.c
 INC_H = inc
 INC_T = unity
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/TEST_PROJ_NAME.out
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
