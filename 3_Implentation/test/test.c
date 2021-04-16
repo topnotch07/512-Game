@@ -29,19 +29,18 @@ int main()
 
 /* Write all the test functions */ 
 void starting() {
-
-      TEST_ASSERT_EQUAL_INT(24, 24);
+    pass;
 }
 
 void Display() {
-     TEST_ASSERT_EQUAL_INT(12, 12); 
+    pass;
 }
 
 void Up() {
-         TEST_ASSERT_EQUAL_INT(14, 14); 
+         pass; 
 
 }
 
 void wait() {
-        TEST_ASSERT_EQUAL_INT(17, 17); 
+       pass;
 }
