@@ -28,18 +28,4 @@ int main()
 }
 
 /* Write all the test functions */ 
-void starting() {
-   TEST_PASS();  
-}
 
-void Display() {
-   TEST_PASS();  
-}
-
-void Up() {
-        TEST_PASS(); 
-
-}
-void wait() {
-     TEST_PASS(); 
-}
