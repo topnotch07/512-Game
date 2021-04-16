@@ -55,18 +55,17 @@ cppcheck:
 	
 sanitize_check:
 	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
-	./$(TEST_OUTPUT)
 	
 debug:
-	gcc -I $(INC_H) $(SRC) 512.c -g -o $(PROJ_NAME).$(EXEC)
-	gdb $(PROJ_NAME).$(EXEC)
+	gcc -I $(INC_H) $(SRC) 512.c -g -o $(PROJ_NAME).out
+	gdb $(PROJ_NAME).out
 
 valgrind:
-	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
+	chmod u+x $(TEST_PROJ_NAME)
+	valgrind ./$(TEST_PROJ_NAME)
 	
 coverage:$(TEST_SRC)
-	 gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
-	./$(TEST_OUTPUT)
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
 	gcov -a 512.c
 
 
