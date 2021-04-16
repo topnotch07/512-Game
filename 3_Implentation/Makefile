@@ -1,4 +1,4 @@
-PROJ_NAME = 512_game
+PROJ_NAME = 512
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 SRC =src/display.c \
@@ -37,8 +37,8 @@ doc:
 	make -C ./documentation
 
 test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT).out
-	./$(TEST_OUTPUT).out
+	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
 
 analyze: test memcheck staticcheck coverage sanitize_check
 
