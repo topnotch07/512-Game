@@ -33,7 +33,7 @@ int main()
   UNITY_BEGIN();
 
 /* Run Test functions */
-  RUN_TEST(strarting);
+  RUN_TEST(starting);
   RUN_TEST(Dsiplay);
   RUN_TEST(Up);
   RUN_TEST(wait);
@@ -60,7 +60,7 @@ void starting(void) {
     waitL();
     printf("\n\n\n\n\n\n\n\n\t\t\t\t\t\t");
     printer(sentence2);
-    while(!kbhit());
+  
 
     printf("\n\n\n\n\t\t\t\t\t");
     printer(sentence4);
@@ -83,7 +83,7 @@ void starting(void) {
     printf(" ->  For wining this game any one box have value 2048\n\n");
     printf(" -> You have maximum 512 try to win the game\n\n\n\n");
     printf("\t\t\t\t\t\tPRESS ANY KEY TO PLAY\n");
-    while(!kbhit());
+
 }
 
 void Display(void) { 
