@@ -1,4 +1,7 @@
 # SDLC Activity Based Learning
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/48a7043a0bdf49938cf86953a7fb9940)](https://app.codacy.com/gh/topnotch07/Ltts_mini_project?utm_source=github.com&utm_medium=referral&utm_content=topnotch07/Ltts_mini_project&utm_campaign=Badge_Grade_Settings)
+
 ## 512_game
 ![Banner](https://github.com/topnotch07/Ltts_mini_project/blob/2a949caeece4a58a400821a10e80e3d09b6ed738/1_Requirements./game%20(2).jpg)
 
