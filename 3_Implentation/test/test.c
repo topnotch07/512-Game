@@ -34,7 +34,7 @@ int main()
 
 /* Run Test functions */
   RUN_TEST(starting);
-  RUN_TEST(Dsiplay);
+  RUN_TEST(Display);
   RUN_TEST(Up);
   RUN_TEST(wait);
 
