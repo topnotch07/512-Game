@@ -45,7 +45,7 @@ doc:
 	make -C ./documentation
 
 test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT)
+	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) -o $(TEST_OUTPUT)
 
 
 analyze: test memcheck staticcheck coverage sanitize_check
