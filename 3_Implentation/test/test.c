@@ -28,7 +28,7 @@ int main()
 }
 
 /* Write all the test functions */ 
-void starting(void) {
+void starting() {
     int i;
     char sentence1[]="WELCOME NERD";
     char sentence2[]="Press any key to continue";
@@ -71,7 +71,7 @@ void starting(void) {
 
 }
 
-void Display(void) { 
+void Display() { 
     int i,j;
     system("cls");
 
@@ -92,7 +92,7 @@ void Display(void) {
     printf("\t\t\t %c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n\n",BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER,BORDER);
 }
 
-void Up(void) {
+void Up() {
     int i,j;
     for(j=0;j<SIZE;j++)
     {
@@ -118,7 +118,7 @@ void Up(void) {
     }
 }
 
-void wait(void) {
+void wait() {
     int i;
     for(i=0;i<4500000;i++);
   
