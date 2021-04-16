@@ -37,7 +37,7 @@ doc:
 	make -C ./documentation
 
 test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT)
+	sudo gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT)
 
 
 analyze: test memcheck staticcheck coverage sanitize_check
@@ -49,7 +49,7 @@ cppcheck:
 	cppcheck --enable=all $(SRC) 512.c
 	
 sanitize_check:
-	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+	sudo gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
 	./$(TEST_OUTPUT)
 	
 debug:
@@ -60,7 +60,7 @@ valgrind:
 	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
 	
 coverage:$(TEST_SRC)
-	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	sudo gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
 	./$(TEST_OUTPUT)
 	gcov -a 512.c
 
