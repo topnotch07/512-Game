@@ -17,7 +17,7 @@ unity/unity.c
 INC_H = inc
 INC_T = unity
 
-TEST_OUTPUT = $(BUILD)/TEST_PROJ_NAME.out
+TEST_OUTPUT = $(BUILD)/$(TEST_PROJ_NAME).out
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
@@ -38,8 +38,10 @@ doc:
 
 test:
 	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT)
+	chmod 755 $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
 
+chmod 755 $(TEST_OUTPUT)
 analyze: test memcheck staticcheck coverage sanitize_check
 
 memcheck:
