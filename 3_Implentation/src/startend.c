@@ -24,8 +24,7 @@ void starting()
     waitL();
     printf("\n\n\n\n\n\n\n\n\t\t\t\t\t\t");
     printer(sentence2);
-    while(!kbhit());
-
+    
     printf("\n\n\n\n\t\t\t\t\t");
     printer(sentence4);
     waitL();
