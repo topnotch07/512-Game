@@ -1,9 +1,11 @@
 # SDLC Activity Based Learning
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/75c1c00fc9c94026acf1e4a93b5945fd)](https://www.codacy.com/gh/topnotch07/Ltts_mini_project/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=topnotch07/Ltts_mini_project&amp;utm_campaign=Badge_Grade)
+
+
 ## 512_game
 ![Banner](https://github.com/topnotch07/Ltts_mini_project/blob/2a949caeece4a58a400821a10e80e3d09b6ed738/1_Requirements./game%20(2).jpg)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/75c1c00fc9c94026acf1e4a93b5945fd)](https://www.codacy.com/gh/topnotch07/Ltts_mini_project/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=topnotch07/Ltts_mini_project&amp;utm_campaign=Badge_Grade)
 
 |Build|Unit Test|cppcheck|Valgrind|Codacy|
 |:--:|:--:|:--:|:--:|:--:|
