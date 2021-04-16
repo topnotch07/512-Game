@@ -7,9 +7,6 @@ int score=512;
 
 int last=0;
 
-
-
-
 int Temp_counter()
 {
     /**< IT SHOULD FIND MAX VALUE FROM WHOLE MATRI */
