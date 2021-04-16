@@ -1,4 +1,4 @@
-PROJ_NAME = 512
+PROJ_NAME = game
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 SRC =src/display.c \
