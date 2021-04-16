@@ -8,59 +8,65 @@ src/startend.c
 
 COV_SRC = test.c
 
-TEST_SRC = test/test.c \
+TEST_SRC = src/display.c \
+src/movements.c \
+src/wait.c \
+src/startend.c \
+test/test.c \
 unity/unity.c 
 INC_H = inc
 INC_T = unity
 
-ifdef OS
-   RM = del 
-   FixPath = $(subst /,\,$1)
-   EXEC = exe
-else
-   ifeq ($(shell uname), Linux)
-      RM = rm -rf
-      FixPath = $1
-	  EXEC = out
-   endif
-endif
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+
+DOCUMENTATION_OUTPUT = documentation/html
+
+$(PROJECT_NAME):all
+
 .PHONY: run clean test doc all
 
-all:
-	gcc -I $(INC_H) $(SRC) 512.c -o $(call FixPath,$(PROJ_NAME).$(EXEC))
+all: $(SRC) $(BUILD)
+	gcc -I $(INC_H) $(SRC) 512.c -o $(PROJECT_OUTPUT).out
 	
-run:
-	$(call FixPath,$(PROJ_NAME).$(EXEC))
+run:$(PROJECT_NAME)
+	./$(PROJ_OUTPUT).out
+	
+doc:
+	make -C ./documentation
+
 test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
-	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(TEST_OUTPUT).out
+	./$(TEST_OUTPUT).out
 
-coverage:
-	cp test/test.c .
-	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(COV_SRC)
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
-	$(RM) *.DAT
-	$(RM) test.c
+analyze: test memcheck staticcheck coverage sanitize_check
 
+memcheck:
+	valgrind ./$(TEST_OUTPUT)
 
 cppcheck:
 	cppcheck --enable=all $(SRC) 512.c
+	
+sanitize_check:
+	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+	./$(TEST_OUTPUT)
+	
 debug:
 	gcc -I $(INC_H) $(SRC) 512.c -g -o $(PROJ_NAME).$(EXEC)
 	gdb $(PROJ_NAME).$(EXEC)
 
 valgrind:
 	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
+	
+coverage:$(TEST_SRC)
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+	gcov -a 512.c
 
 
 clean:
-	$(RM) *.DAT
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT) *.gcda *.gcno *.gcov
+
+$(BUILD):
+	mkdir build
