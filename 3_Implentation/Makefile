@@ -3,6 +3,8 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD = build
 
+$(BUILD):
+	mkdir build
 
 SRC =src/display.c \
 src/movements.c \
@@ -61,7 +63,7 @@ debug:
 	gdb $(PROJ_NAME).out
 
 valgrind:
-	chmod u+x $(TEST_PROJ_NAME)
+	chmod a+x $(TEST_PROJ_NAME)
 	valgrind ./$(TEST_PROJ_NAME)
 	
 coverage:$(TEST_SRC)
@@ -72,5 +74,3 @@ coverage:$(TEST_SRC)
 clean:
 	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT) *.gcda *.gcno *.gcov
 
-$(BUILD):
-	mkdir build
