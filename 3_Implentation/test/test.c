@@ -4,22 +4,7 @@
 #define PROJECT_NAME    "512_game"
 
 
-/* Prototypes for all the test functions */
-void starting();
-void wait();
-void waitL();
-void Display();
-void print_ever();
-int Action(int);
-void Random_creator();
-void Starting_Random();
-int Temp_counter();
-void ending();
-void record();
-void Down();
-void Up();
-void Left();
-void Right();
+
 
 /* Required by the unity test framework */
 void setUp(){}
@@ -89,7 +74,7 @@ void starting(void) {
 void Display(void) { 
     int i,j;
     system("cls");
-    print_ever();
+
     for(i=0;i<SIZE;i++)
     {
         printf("\t\t\t %c",BORDER);
