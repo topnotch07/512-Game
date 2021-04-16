@@ -106,7 +106,7 @@ main()
     Arrow=DOWN;
     while(Arrow!=ESC)  //  HERE IF USER WANT TO EXIT THEN PRESS ESC KEY
     {
-        Arrow=getch();
+        Arrow=getchar();
         aro=Arrow;
         Action(Arrow);
         temp=Temp_counter();
