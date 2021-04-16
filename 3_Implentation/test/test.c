@@ -29,18 +29,18 @@ int main()
 
 /* Write all the test functions */ 
 void starting() {
-    pass;
+   TEST_PASS()  
 }
 
 void Display() {
-    pass;
+   TEST_PASS()  
 }
 
 void Up() {
-         pass; 
+        TEST_PASS()  
 
 }
 
 void wait() {
-       pass;
+     TEST_PASS()  
 }
