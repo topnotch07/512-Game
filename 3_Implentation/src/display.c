@@ -29,7 +29,6 @@ void Display()
     */
     int i,j;
     system("cls");
-    print_ever();
     for(i=0;i<SIZE;i++)
     {
         printf("\t\t\t %c",BORDER);
