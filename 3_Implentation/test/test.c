@@ -30,17 +30,18 @@ int main()
 /* Write all the test functions */ 
 void starting() {
 
-      TEST_ASSERT_EQUAL_INT(24, 24) }
+      TEST_ASSERT_EQUAL_INT(24, 24);
+}
 
 void Display() {
-     TEST_ASSERT_EQUAL_INT(12, 12) 
+     TEST_ASSERT_EQUAL_INT(12, 12); 
 }
 
 void Up() {
-         TEST_ASSERT_EQUAL_INT(14, 14) 
+         TEST_ASSERT_EQUAL_INT(14, 14); 
 
 }
 
 void wait() {
-        TEST_ASSERT_EQUAL_INT(17, 17)   
+        TEST_ASSERT_EQUAL_INT(17, 17); 
 }
