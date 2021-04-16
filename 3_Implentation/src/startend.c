@@ -47,7 +47,6 @@ void starting()
     printf(" ->  For wining this game any one box have value 2048\n\n");
     printf(" -> You have maximum 512 try to win the game\n\n\n\n");
     printf("\t\t\t\t\t\tPRESS ANY KEY TO PLAY\n");
-    while(!kbhit());
 }
 
 /**< random integers */
