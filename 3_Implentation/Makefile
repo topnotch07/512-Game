@@ -41,7 +41,6 @@ test:
 	chmod 755 $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
 
-chmod 755 $(TEST_OUTPUT)
 analyze: test memcheck staticcheck coverage sanitize_check
 
 memcheck:
