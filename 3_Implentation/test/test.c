@@ -23,24 +23,24 @@ int main()
   RUN_TEST(Up);
   RUN_TEST(wait);
 
-  /* Close the Unity Test Framework */
+ /* Close the Unity Test Framework */
   return UNITY_END();
 }
 
 /* Write all the test functions */ 
 void starting() {
-   TEST_PASS()  
+   TEST_PASS();  
 }
 
 void Display() {
-   TEST_PASS()  
+   TEST_PASS();  
 }
 
 void Up() {
-        TEST_PASS()  
+        TEST_PASS(); 
 
 }
 
 void wait() {
-     TEST_PASS()  
+     TEST_PASS(); 
 }
