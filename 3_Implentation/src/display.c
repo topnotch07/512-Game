@@ -3,7 +3,7 @@
 
 
 /**< to print the required sentence  */
-printer(char s[])
+void printer(char s[])
 {
     int i=0;
     while(s[i]!='\0')
