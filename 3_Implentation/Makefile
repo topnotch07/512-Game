@@ -12,12 +12,7 @@ movements.c\
 wait.c
 
 # All test source files
-TEST_SRC = src/displpay.c\
-startend.c\
-movements.c\
-wait.c\
-test/test_movements.c\
-unity/unity.c\
+TEST_SRC = SRC
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
@@ -72,7 +67,7 @@ sanitize_check:
 coverage:$(TEST_SRC)
 	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
 	./$(TEST_OUTPUT)
-	gcov -a displpay.c\startend.c\movements.c\wait.c
+	gcov -a SRC
 
 # Remove all the built files, invoke by `make clean`
 clean:
