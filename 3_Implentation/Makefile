@@ -6,13 +6,13 @@ BUILD = build
 
 # All source code files
 SRC = 512.c\
-src/displpay.c\
+src/display.c\
 startend.c\
 movements.c\
 wait.c
 
 # All test source files
-TEST_SRC = src/displpay.c\
+TEST_SRC = src/display.c\
 startend.c\
 movements.c\
 wait.c\
@@ -72,7 +72,7 @@ sanitize_check:
 coverage:$(TEST_SRC)
 	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
 	./$(TEST_OUTPUT)
-	gcov -a displpay.c startend.c movements.c wait.c
+	gcov -a display.c startend.c movements.c wait.c
 
 
 # Remove all the built files, invoke by `make clean`
