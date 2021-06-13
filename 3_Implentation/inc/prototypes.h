@@ -8,6 +8,8 @@
  * @copyright Copyright (c) 2021
  *
  */
+#ifndef __PROTOTYPES_H__
+#define __PROTOTYPES_H__
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
@@ -38,6 +40,7 @@ void starting();
 void wait();
 void waitL();
 void Display();
+void printer();
 void print_ever();
 int Action(int);
 void Random_creator();
@@ -50,3 +53,4 @@ void Up();
 void Left();
 void Right();
 
+#endif;
