@@ -19,7 +19,6 @@ int main()
   RUN_TEST(starting);
   RUN_TEST(Display);
   RUN_TEST(Up);
-  RUN_TEST(wait);
 
  /* Close the Unity Test Framework */
   return UNITY_END();
