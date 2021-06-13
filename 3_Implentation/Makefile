@@ -7,15 +7,15 @@ BUILD = build
 # All source code files
 SRC = 512.c\
 src/display.c\
-startend.c\
-movements.c\
-wait.c
+src/startend.c\
+src/movements.c\
+src/wait.c
 
 # All test source files
 TEST_SRC = src/display.c\
-startend.c\
-movements.c\
-wait.c\
+src/startend.c\
+src/movements.c\
+src/wait.c\
 test/test.c\
 unity/unity.c\
 
