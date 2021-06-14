@@ -4,6 +4,7 @@
     [Released under MIT License. Please refer to license.txt for details]
 ========================================== */
 
+
 #ifndef UNITY_INTERNALS_H
 #define UNITY_INTERNALS_H
 
