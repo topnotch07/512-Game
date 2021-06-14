@@ -6,4 +6,3 @@
 |02|Display whether execution of the file as expected at start|Staring() function| SUCCESS |SUCCESS |REQUIREMENT based|
 |03|Check if file is properly opened during program execution| Source file and header files|SUCCESS | SUCCESS |Developement|
 |04|At last after met the target and out of moves it sbhould return|Output|SUCCESS | SUCCESS |Technical|
-
