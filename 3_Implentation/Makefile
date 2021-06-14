@@ -1,7 +1,6 @@
 # Name of the project
 PROJECT_NAME = 512
 
-
 # Output directory
 BUILD = build
 
