@@ -1,7 +1,6 @@
 #include "prototypes.h"
 
 
-
 /**< to print the required sentence  */
 void printer(char s[])
 {
