@@ -2,7 +2,6 @@
 
 
 
-
 /** \brief Random_creator
  * performs calculation at random numbers
  * \return void
