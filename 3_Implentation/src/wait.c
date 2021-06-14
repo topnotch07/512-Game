@@ -2,6 +2,7 @@
 
 /**< waiting time for screen to load */
 
+
 void wait()
 {
     int i;
