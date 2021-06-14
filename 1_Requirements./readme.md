@@ -5,7 +5,6 @@ REQUIREMENTS
    * Basic plan
    * Interface 
    * Refrences 
-
 ## INTODUCTION
   * This mini project describes number puzzle game on the subject to mathematics. It is similar to 2048  a single-player sliding tile puzzle video game written by Italian web developer Gabriele Cirulli. In our project we using 512 a simple mahematical. It was originally written in JavaScript and CSS.  
   * The objective of the game is to slide numbered tiles on a corner and mathematical trick to combine them to create a tile with the number 512; however, one can continue to play the game after reaching the goal, creating tiles with larger numbers. 
