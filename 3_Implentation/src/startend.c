@@ -1,7 +1,6 @@
 #include "prototypes.h"
 
 
-
 /** \brief starting()
  * what to be executed at start application
  * \return void
